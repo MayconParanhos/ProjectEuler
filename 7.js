@@ -36,7 +36,7 @@ function isPrime(num) {
    // Let's get the square root and round down the result.
    let numSqrt = Math.floor(Math.sqrt(num));
 
-   //Let's cut off even numbers at first
+   //Let's cut off even numbers at first. I will explain later.
    for(let i =2; i <= numSqrt; i++) {
     if(num % i == 0) {
         return false;
@@ -46,13 +46,11 @@ function isPrime(num) {
 }
 
 let arr = [];
-for(let i = 1; i<=20; i++) {
+for(let i = 1; i<=110000; i++) {
     if(isPrime(i)) {
         arr.push(i);
     }
 }
 
 
-arr.forEach((value, index) => {
-    console.log(`${index + 1} - ${value}`);
-});
+console.log(arr[10001 - 1]); // show the 10001st prime.
