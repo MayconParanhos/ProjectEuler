@@ -1,35 +1,3 @@
-function isMulti3(num) {
-    if(num > 3) {
-        if(num % 3 == 0) {
-            return true;
-        }else {
-            return false;
-        }
-    }
-}
-function isMulti5(num) {
-    if(num > 5) {
-        if(num % 5 == 0) {
-            return true;
-        }else  {
-            return false;
-        }
-    }
-}
-function isMulti7(num) {
-    if(num > 7) {
-        if(num % 7 == 0) {
-            return true;
-        }else {
-            return false;
-        }
-    }
-}
-
-
-
-
-
 function isPrime(num) {
    if(num == 1) return false; // 1 is not prime
 
