@@ -4,7 +4,7 @@ function isPrime(num) {
    // Let's get the square root and round down the result.
    let numSqrt = Math.floor(Math.sqrt(num));
 
-   //Let's cut off even numbers at first. I will explain later.
+   //Let's cut off even numbers at first and cut the number 2, returning true for it. Additionally, tests until reach square
    for(let i =2; i <= numSqrt; i++) {
     if(num % i == 0) {
         return false;
