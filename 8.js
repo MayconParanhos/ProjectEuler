@@ -3,9 +3,7 @@ const arrRange = range.split("");
 
 function productFromArr(arr =[]) {
     let p =1;
-    for(let i = 0; i <= arr.length - 1; i++) {
-        p *= arr[i];
-    }
+    arr.forEach(value => p *= value);
     return p;
 }
 
